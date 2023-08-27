@@ -7,7 +7,6 @@ math:
 license: 
 hidden: false
 comments: true
-draft: true
 ---
 
 ### 创建顶级Btrfs子卷
