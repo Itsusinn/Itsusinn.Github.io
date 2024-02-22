@@ -57,3 +57,5 @@ do
   ffmpeg -i $files -c:v libx264 -crf 23 -c:a aac -q:a 100 ${files%%.*}.mp4
 done
 ```
+
+encode the video to H.264 video and AAC audio, using the default quality
