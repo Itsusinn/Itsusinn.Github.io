@@ -49,3 +49,11 @@ $ sudo mount -a
 ufw route allow proto tcp from any to any port 80
 
 这个命令会允许外部网络访问所有用 Docker 发布出来的并且内部服务端口为 80 的所有服务。
+
+### FFMPEG 将所有wmv转为MP4
+```bash
+for files in $(ls *.wmv)
+do
+  ffmpeg -i $files -c:v libx264 -crf 23 -c:a aac -q:a 100 ${files%%.*}.mp4
+done
+```
