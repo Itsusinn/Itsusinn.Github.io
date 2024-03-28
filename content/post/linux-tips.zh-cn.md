@@ -50,6 +50,12 @@ ufw route allow proto tcp from any to any port 80
 
 这个命令会允许外部网络访问所有用 Docker 发布出来的并且内部服务端口为 80 的所有服务。
 
+### Btrfs & RefindEFI
+/boot/refind_linux
+```
+"Boot using standard options"  "root=PARTUUID=9255bf76-e8da-45be-9a61-4fdc63cfea7d rw rootflags=subvol=arch initrd=arch\boot\amd-ucode.img initrd=arch\boot\initramfs-%v.img"
+```
+
 ### FFMPEG 将所有wmv转为MP4
 ```bash
 for files in $(ls *.wmv)
