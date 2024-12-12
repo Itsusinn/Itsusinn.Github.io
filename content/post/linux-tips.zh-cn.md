@@ -22,6 +22,12 @@ $ sudo btrfs subvolume list /
 <part>: Btrfs分区名
 <name>: 子卷名称
 
+### 挂载Btrfs子卷
+```
+mount -t btrfs -o subvol=[volname]，defaults,compress=zstd /dev/disk/by-uuid/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX /path/to/mount
+
+```
+
 ### 挂载Btrfs子卷为交换区
 
 ```bash
